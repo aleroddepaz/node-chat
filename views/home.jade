@@ -1,0 +1,20 @@
+doctype 5
+html
+   head
+      title Node.js Chat
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+      script(src="/socket.io/socket.io.js")
+      script(src="script.js")
+      link(rel='stylesheet', href='style.css')
+   body
+      div.container
+         header
+            h1 A Chat application with Node.js and Socket.io
+         div#nickControls
+            p#nickInfo Enter a nickname for the chat:
+            input(type='text')#nickInput
+            button#nickSet Join!
+         div#chatEntries
+         div#chatControls
+            input(type='text')#messageInput
+            button#submit Send
